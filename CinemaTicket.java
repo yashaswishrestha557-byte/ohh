@@ -12,17 +12,19 @@ public class CinemaTicket
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter your age group(Child, Adult, Senior)");
         String age=scan.next();
-        System.out.println("Enter movie language");
-        String lang=scan.next();
+        System.out.println("Is it hindi movie");
+        boolean hlang=scan.nextBoolean();
+        System.out.println("Is it a english movie");
+        boolean elang=scan.nextBoolean();
         System.out.println("Are you a student(true/false)");
         boolean student=scan.nextBoolean();
         System.out.println("It is festival season(true/false)");
         boolean f=scan.nextBoolean();
-        double iprice;
-        double sdis;
-        double fdis;
-        double lp;
-        double finalprice;
+        double iprice=0;
+        double sdis=0;
+        double fdis=0;
+        double lp=0;
+        double finalprice=0;
         
         if (age=="child"){
             iprice=150;
@@ -34,14 +36,11 @@ public class CinemaTicket
             iprice=200;
         }
         
-        if (lang=="hindi"){
+        if (hlang==true){
             lp=50;
         }
-        else if(lang=="english"){
+        if(elang==true){
             lp=100;
-        }
-        else{
-            lp=0;
         }
         
         

@@ -10,9 +10,9 @@ public class tax
 {
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
-        System.out.println("Enter your income");
+        System.out.println("Enter your income amount");
         int i=scan.nextInt();
-        double tax;
+        double tax=0;
         if(i<=500000){
             tax=i*0.01;
         }
