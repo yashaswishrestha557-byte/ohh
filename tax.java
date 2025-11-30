@@ -26,10 +26,10 @@ public class tax
             tax=35000+i*0.30;
         }
         else if(i>=2000001 && i<=5000000){
-            tax=335000+0.36;
+            tax=335000+i*0.36;
         }
         else{
-            tax=1135000+0.39;
+            tax=1135000+i*0.39;
         }
         System.out.println("Your tax amount is "+tax);
     }
